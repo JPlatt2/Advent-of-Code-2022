@@ -1,6 +1,7 @@
-file = open('Day 1/input.txt')
+file = open('Day1/input.txt')
 calories = list()
 n = 0
+#Read each line in the file. If line is not empty add calories. When an empty line is reached append calories to list and reset calories to 0.
 for line in file:
     if line != '\n':
         n = n + int(line)
